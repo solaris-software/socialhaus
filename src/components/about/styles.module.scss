@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.container {
+    height: calc(100vh - $top-bar-height);
+    background-color: $light-black;
+    padding: 64px;
+    position: relative; /* Ensure container is positioned relative for absolute positioning of the shape */
+}
+
+.backgroundShape {
+    position: absolute;
+    left: -134px;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    transform: skew(20deg);
+    background-color: $grey;
+    opacity: 0.5;
+}
+
+.leftContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        p {
+            font-size: $body-large;
+            color: $white;
+
+        }
+    }
+}
+

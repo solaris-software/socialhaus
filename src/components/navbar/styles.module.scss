@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $medium $extra-large;
+  background-color: $light-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  span {
+    font-size: $body-large;
+    color: $white;
+  }
+}
+
+.links {
+    display: flex;
+    gap: $large;
+    align-items: center;
+}
+
+.sections {
+    display: flex;
+    gap: $medium;
+    align-items: center;
+
+    a {
+      color: $white;
+      font-size: $body-medium;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $light-grey;
+    }
+}
+
+.button {
+    padding: $small $large;
+    background-color: $white;
+    color: $light-black;
+    font-size: $body-medium;
+    border: none;
+    border-radius: $medium-radius;
+    cursor: pointer;
+    font-family: $title-font-style;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+
+}
