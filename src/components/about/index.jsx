@@ -48,7 +48,7 @@ export const About = () => {
         <div className={styles.container}>
             <div className={styles.backgroundShape}></div>
             <div className={styles.leftContainer}>
-                <Title title="ABOUT US" color="white"/>
+                <Title title="ABOUT US" variant="light"/>
                 <div>
                     <p>{aboutContent1}</p>
                     <p>{aboutContent2}</p>

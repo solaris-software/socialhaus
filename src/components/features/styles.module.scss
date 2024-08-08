@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.container {
+    height: auto;
+    background-color: $cream-bg;
+    padding: 32px 64px;
+    position: relative;
+    display: flex;
+    gap: 64px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

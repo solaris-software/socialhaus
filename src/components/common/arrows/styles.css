@@ -1,0 +1,21 @@
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.custom-arrow svg {
+    width: 30px;
+    height: 30px;
+    fill: black; /* Adjust as needed */
+}
