@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 64px 0;
+  gap: 32px;
+  border-bottom: 2px solid $white;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-size: $body-large;
+  color: $white;
+  font-family: $title-font-style;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.innerContent {
+  overflow: hidden;
+  p {
+    font-size: $body-medium;
+    color: $grey;
+    max-width: 50%;
+  }
+}
