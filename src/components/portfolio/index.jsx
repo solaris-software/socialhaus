@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import {Title} from "../common/title/index.jsx";
 import {ProjectCard} from "../common/projectCard/index.jsx";
 import {NextArrow, PrevArrow} from "../common/arrows/index.jsx";
+import dummyImage from "/src/assets/dummy-image.jpg";
 
 export const Portfolio = () => {
 
@@ -34,7 +35,7 @@ export const Portfolio = () => {
                     <Slider {...settings}>
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => {
                             return (
-                                <ProjectCard key={index} title="Project Title" description="Project Description"/>
+                                <ProjectCard key={index} image={dummyImage} title="Project Title" description="Project Description"/>
                             )
                         })}
                     </Slider>
