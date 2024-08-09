@@ -31,7 +31,7 @@ export const Portfolio = () => {
                 <Title title="PORTFOLIO" variant="light"/>
             </div>
             <div className={styles.sliderContainer}>
-                <div className="slider-container">
+                <div className="slider-container portfolio-carousel">
                     <Slider {...settings}>
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => {
                             return (

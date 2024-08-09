@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.container {
+  height: auto;
+  background-color: $cream-bg;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 32px 64px;
+}
+
+.titleColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h5 {
+      margin-left: auto;
+      font-family: $fuzzy-font-style;
+        font-size: $body-large;
+        color: $light-black;
+    }
+}
+
+.carouselContainer {
+  padding-bottom: 80px;
+}

@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import textBg from "../../assets/hero-text-bg.png";
+import { Typewriter } from "../common/typewriter/index.jsx";
 
 const heroTitle = "Social";
 const heroSubtitle = "HAUS";
@@ -23,7 +24,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div className={styles.description}>
-                    <h2>{heroDescription}</h2>
+                <Typewriter text={heroDescription} className={styles.heroText} />
             </div>
             <div className={styles.footer}>
                 <h4>

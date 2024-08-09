@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    background-color: $light-black;
+    color: $white;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container {
+    display: flex;
+    padding: 0 16px;
+    border-bottom: 2px solid $grey;
+    align-items: center;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    font-size: 112px;
+    font-weight: 700;
+    font-family: $title-font-style;
+    color: $dark-grey;
+    text-align: center; /* Center align the title */
+    margin: 0; /* Remove default margin */
+}
+
+.dot {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: "Poppins", sans-serif;
+}
+
+.subtitle {
+    position: absolute;
+    top: 50%; /* Center vertically relative to the container */
+    left: 50%; /* Center horizontally relative to the container */
+    transform: translate(-50%, -50%); /* Offset to center the element */
+    z-index: 1; /* Ensure it appears on top */
+
+    h6 {
+        font-size: 20px;
+        color: $grey;
+        line-height: 1;
+        font-weight: 600;
+        text-align: center;
+        margin: 0; /* Remove default margin */
+    }
+}
+
+
+
+.contacts {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.infoContainer {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    p {
+        color: $white;
+        font-size: 14px;
+    }
+}
+
+.apps {
+    display: flex;
+    gap: 16px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: $white;
+    padding-bottom: 8px;
+    margin-left: 200px;
+}

@@ -4,6 +4,8 @@ import {Hero} from "./components/hero/index.jsx";
 import {About} from "./components/about/index.jsx";
 import {Features} from "./components/features/index.jsx";
 import {Portfolio} from "./components/portfolio/index.jsx";
+import {Clients} from "./components/clients/index.jsx";
+import {Footer} from "./components/footer/index.jsx";
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <About />
       <Features />
       <Portfolio />
+      <Clients />
+      <Footer />
     </div>
   )
 }

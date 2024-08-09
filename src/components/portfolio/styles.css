@@ -1,4 +1,5 @@
-.slider-container {
+/* CarouselStyles.css */
+.portfolio-carousel .slider-container {
     position: relative;
     width: 90%;  /* Ajusta según tus necesidades */
     margin: 0 auto;
@@ -6,7 +7,7 @@
     max-width: 100vw;
 }
 
-.slick-list {
+.portfolio-carousel .slick-list {
     position: relative;
     overflow-y: visible !important;  /* Permitir desbordamiento */
     padding: 0;  /* Asegúrate de que no haya padding que cause el recorte */
@@ -15,17 +16,17 @@
     align-items: center;
 }
 
-.slick-track {
+.portfolio-carousel .slick-track {
     display: flex;
     align-items: center;
     overflow-y: visible !important;  /* Permitir desbordamiento */
 }
 
-.slide-item {
+.portfolio-carousel .slide-item {
     transition: transform 0.5s ease;
 }
 
-.slick-center {
+.portfolio-carousel .slick-center {
     opacity: 1 !important;
     z-index: 10;
     position: relative;
@@ -33,31 +34,30 @@
     transition: transform 0.5s ease;
 }
 
-.slick-center .slide-item {
+.portfolio-carousel .slick-center .slide-item {
     z-index: 2;  /* Asegúrate de que el slide central esté delante de los demás */
 }
 
-.slick-slide {
+.portfolio-carousel .slick-slide {
     opacity: 0.6;
-    background-color: #383838;
     overflow-y: visible;  /* Permitir desbordamiento */
 }
 
 /* Estilos para los puntos de navegación */
-.slick-dots {
+.portfolio-carousel .slick-dots {
     /* Ajusta la posición vertical según tus necesidades */
 }
 
-.slick-dots li button:before {
+.portfolio-carousel .slick-dots li button:before {
     font-size: 16px; /* Ajusta el tamaño de los puntos */
     color: #ccc; /* Color de los puntos inactivos */
     transition: color 0.3s ease;
 }
 
-.slick-dots li.slick-active button:before {
+.portfolio-carousel .slick-dots li.slick-active button:before {
     color: #fff; /* Color de los puntos activos */
 }
 
-.slick-dots li button:hover:before {
+.portfolio-carousel .slick-dots li button:hover:before {
     color: #E0E0E0; /* Color de los puntos al pasar el ratón (hover) */
 }
