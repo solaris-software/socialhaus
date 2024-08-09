@@ -78,12 +78,13 @@
     align-items: center;
     text-align: center;
     max-width: 75%;
-    h2 {
-        color: $light-black;
-        font-size: 54px;
-        font-weight: 600;
-        margin-bottom: 64px;
-    }
+}
+
+.heroText {
+    color: $light-black;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 64px;
 }
 
 .footer {
