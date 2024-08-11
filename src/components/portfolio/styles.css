@@ -45,16 +45,3 @@
     overflow-y: visible;  /* Permitir desbordamiento */
 }
 
-.portfolio-carousel .slick-dots li button:before {
-    font-size: 16px; /* Ajusta el tamaño de los puntos */
-    color: #ccc; /* Color de los puntos inactivos */
-    transition: color 0.3s ease;
-}
-
-.portfolio-carousel .slick-dots li.slick-active button:before {
-    color: #fff; /* Color de los puntos activos */
-}
-
-.portfolio-carousel .slick-dots li button:hover:before {
-    color: #E0E0E0; /* Color de los puntos al pasar el ratón (hover) */
-}
