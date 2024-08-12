@@ -6,6 +6,8 @@ import {Features} from "./components/features/index.jsx";
 import {Portfolio} from "./components/portfolio/index.jsx";
 import {Clients} from "./components/clients/index.jsx";
 import {Footer} from "./components/footer/index.jsx";
+import ContactForm from "./components/common/contactForm/index.jsx";
+import {Contact} from "./components/contact/index.jsx";
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
       <Features />
       <Portfolio />
       <Clients />
+        <Contact/>
       <Footer />
     </div>
   )
