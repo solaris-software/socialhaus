@@ -5,17 +5,18 @@ import styles from './styles.module.scss';
 export const Contact = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.titleContainer}>
-                <Title title="CONTACT US" variant="dark"/>
+            <div className={styles.contentContainer}>
+                <div className={styles.titleContainer}>
+                    <Title title="CONTACT US" variant="dark"/>
+                </div>
+                <div className={styles.content}>
+                    <div className={styles.contactColumn}>
+                        <ContactForm/>
+                    </div>
+                </div>
             </div>
             <div className={styles.socialColumn}>
-                <span className={styles.socialText}>SOCIAL HAUS</span>
-            </div>
-            <div className={styles.content}>
-                <div className={styles.contactColumn}>
-                    <ContactForm/>
-                </div>
-
+                <p className={styles.socialText}>SOCIAL HAUS</p>
             </div>
         </div>
     )

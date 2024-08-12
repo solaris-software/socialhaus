@@ -1,0 +1,71 @@
+@import '../../../styles/variables.scss';
+
+.contactForm {
+    max-width: 600px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.formGroup {
+    margin-bottom: 32px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 120%;
+    padding: 16px;
+    font-size: 32px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    color: #333;
+    caret-color: #333;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: #757575;
+    font-size: 32px;
+    font-family: $title-font-style;
+    text-transform: uppercase;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #333;
+}
+
+.formGroup textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.submitButton:hover {
+    background-color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    background: none;
+    opacity: 0.7;
+}

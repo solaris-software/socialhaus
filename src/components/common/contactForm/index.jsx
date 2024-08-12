@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles.css';
+import styles from './styles.module.scss';
 import emailjs from 'emailjs-com';
 
 function ContactForm() {
@@ -35,7 +35,6 @@ function ContactForm() {
         return formErrors;
     };
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formErrors = validate();
@@ -46,15 +45,12 @@ function ContactForm() {
                     from_name: `${formData.firstName} ${formData.lastName}, from: ${formData.email}`,
                     message: formData.message,
                 };
-
-                const result = await emailjs.send(
-                    'service_xow6oba',  // ID del servicio que obtienes en EmailJS
-                    'template_qu5w3mo',  // ID de la plantilla que obtienes en EmailJS
+                await emailjs.send(
+                    'service_xow6oba',
+                    'template_qu5w3mo',
                     templateParams,
-                    'cMcLR3g6ULt9leP4t'  // Tu User ID de EmailJS
+                    'cMcLR3g6ULt9leP4t'
                 );
-
-                console.log("Email sent successfully", result.text);
                 setFormData({
                     firstName: '',
                     lastName: '',
@@ -70,58 +66,56 @@ function ContactForm() {
         }
     };
 
-
-
     return (
-        <form onSubmit={handleSubmit} className="contact-form">
-            <div className="form-group">
-                <label htmlFor="firstName">NOMBRE</label>
+        <form onSubmit={handleSubmit} className={styles.contactForm}>
+            <div className={styles.formGroup}>
                 <input
                     type="text"
                     id="firstName"
                     name="firstName"
+                    placeholder="Nombre"
                     value={formData.firstName}
                     onChange={handleChange}
                 />
-                {errors.firstName && <p className="error">{errors.firstName}</p>}
+                {errors.firstName && <p className={styles.error}>{errors.firstName}</p>}
             </div>
 
-            <div className="form-group">
-                <label htmlFor="lastName">APELLIDO</label>
+            <div className={styles.formGroup}>
                 <input
                     type="text"
                     id="lastName"
                     name="lastName"
+                    placeholder="Apellido"
                     value={formData.lastName}
                     onChange={handleChange}
                 />
-                {errors.lastName && <p className="error">{errors.lastName}</p>}
+                {errors.lastName && <p className={styles.error}>{errors.lastName}</p>}
             </div>
 
-            <div className="form-group">
-                <label htmlFor="email">EMAIL</label>
+            <div className={styles.formGroup}>
                 <input
                     type="email"
                     id="email"
                     name="email"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                 />
-                {errors.email && <p className="error">{errors.email}</p>}
+                {errors.email && <p className={styles.error}>{errors.email}</p>}
             </div>
 
-            <div className="form-group">
-                <label htmlFor="message">MENSAJE</label>
+            <div className={styles.formGroup}>
                 <textarea
                     id="message"
                     name="message"
+                    placeholder="Mensaje"
                     value={formData.message}
                     onChange={handleChange}
                 />
-                {errors.message && <p className="error">{errors.message}</p>}
+                {errors.message && <p className={styles.error}>{errors.message}</p>}
             </div>
 
-            <button type="submit">ENVIAR</button>
+            <button type="submit" className={styles.submitButton}>ENVIAR</button>
         </form>
     );
 }
