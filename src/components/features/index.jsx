@@ -1,8 +1,9 @@
 import styles from "./styles.module.scss";
-import {Title} from "../common/title/index.jsx";
-import {FeatureCard} from "../common/featureCard/index.jsx";
+import { Title } from "../common/title/index.jsx";
+import { FeatureCard } from "../common/featureCard/index.jsx";
+import { motion } from "framer-motion";
 
-//make an array of objects for cads:
+// Array de objetos para las tarjetas:
 const features = [
     {
         title: "Feature 1",
@@ -35,17 +36,43 @@ const features = [
         image: "https://via.placeholder.com/150"
     }
 ];
+
+// Variantes de animación para el contenedor de las tarjetas
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3 // Retardo entre la aparición de cada tarjeta
+        }
+    }
+};
+
+// Variantes de animación para cada tarjeta
+const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
 export function Features() {
     return (
         <div className={styles.container}>
             <div className={styles.titleContainer}>
-                <Title title="WHAT WE DO" variant="dark"/>
+                <Title title="WHAT WE DO" variant="dark" />
             </div>
-            <div className={styles.cardsContainer}>
+            <motion.div
+                className={styles.cardsContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={containerVariants}
+            >
                 {features.map((feature, index) => (
-                    <FeatureCard key={index} title={feature.title} info={feature.info} image={feature.image}/>
+                    <motion.div key={index} variants={cardVariants}>
+                        <FeatureCard title={feature.title} info={feature.info} image={feature.image} />
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
-    )
+    );
 }
