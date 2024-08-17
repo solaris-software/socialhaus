@@ -27,6 +27,9 @@
         transform-origin: center;
         transform: scale(0.9);
     }
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
 }
 
 .contentContainer {
@@ -36,6 +39,9 @@
     align-items: center;
     height: auto;
     padding-left: 64px;
+    @media (max-width: $breakpoint-mobile) {
+        padding-left: 0;
+    }
 }
 
 .title {
@@ -49,6 +55,9 @@
     padding: 0;
     display: flex;
     align-items: baseline;
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 120px;
+    }
 }
 
 .dot {
@@ -69,6 +78,11 @@
         font-weight: 600;
         width: auto;
     }
+    @media (max-width: $breakpoint-mobile) {
+        h3 {
+            font-size: 40px;
+        }
+    }
 }
 
 .description {
@@ -85,6 +99,9 @@
     font-size: 54px;
     font-weight: 600;
     margin-bottom: 64px;
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 24px;
+    }
 }
 
 .footer {
@@ -102,5 +119,9 @@
         border-radius: 64px;
         border: 2px solid $light-black;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        display: none;
     }
 }

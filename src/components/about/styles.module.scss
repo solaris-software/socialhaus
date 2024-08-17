@@ -7,6 +7,13 @@
     position: relative;
     display: flex;
     gap: 64px;
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        height: auto;
+        padding: 32px 16px;
+        gap: 16px;
+    }
+
 }
 
 .backgroundShape {
@@ -16,8 +23,12 @@
     width: 40%;
     height: 100%;
     transform: skew(20deg);
-    background-color: $grey;
+    background-color: #333333;
     opacity: 0.5;
+    @media (max-width: $breakpoint-mobile) {
+        display: none;
+    }
+
 }
 
 .leftContainer {
@@ -36,6 +47,14 @@
             color: $white;
         }
     }
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+        div {
+            p {
+                font-size: $body-medium;
+            }
+        }
+    }
 }
 
 .rightContainer {
@@ -43,11 +62,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
 }
 
 .collapsibleContainer {
     border-bottom: 2px solid $white;
     padding: 32px 16px;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 16px 0;
+    }
 }
 
 .collapsibleHeader {
@@ -64,6 +90,14 @@
         font-size: $body-large;
         color: $white;
         font-family: $title-font-style;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 8px;
+        h3 {
+            font-size: $body-large;
+        }
+
     }
 }
 

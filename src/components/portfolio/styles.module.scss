@@ -10,9 +10,14 @@
   padding: 32px 64px;
   position: relative;
   display: flex;
-  // gap: 64px;
   width: 100%;
   flex-direction: column;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 32px 16px;
+    background-image: none;
+    min-height: auto;
+
+  }
 }
 
 .titleContainer {
@@ -23,6 +28,9 @@
 .sliderContainer {
     width: 70%;
     margin: auto;
+    @media (max-width: $breakpoint-mobile) {
+      width: 100%;
+    }
 }
 
 

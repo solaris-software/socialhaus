@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.container {
+    display: flex;
+    background-color: $light-black;
+    overflow: hidden;
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    @media (max-width: $breakpoint-mobile) {
+        height: 50vh;
+
+    }
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 164px;
+    @media (max-width: $breakpoint-mobile) {
+        display: none;
+    }
+}
+
+.post {
+    display: flex;
+    padding: 8px 32px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-grey;
+    border: 2px solid $black;
+    p {
+        font-size: 36px;
+        font-family: $title-font-style;
+    }
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
+}

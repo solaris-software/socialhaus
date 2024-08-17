@@ -3,7 +3,6 @@ import { Title } from "../common/title/index.jsx";
 import { FeatureCard } from "../common/featureCard/index.jsx";
 import { motion } from "framer-motion";
 
-// Array de objetos para las tarjetas:
 const features = [
     {
         title: "Feature 1",
@@ -37,18 +36,16 @@ const features = [
     }
 ];
 
-// Variantes de animación para el contenedor de las tarjetas
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.3 // Retardo entre la aparición de cada tarjeta
+            staggerChildren: 0.3
         }
     }
 };
 
-// Variantes de animación para cada tarjeta
 const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }

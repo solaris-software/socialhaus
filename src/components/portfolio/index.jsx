@@ -20,20 +20,26 @@ export const Portfolio = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
 
-    // Variantes de animación para el contenedor del carrusel
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2 // Retardo entre la aparición de cada tarjeta
+                staggerChildren: 0.2
             }
         }
     };
 
-    // Variantes de animación para las tarjetas
     const cardVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -49,7 +55,7 @@ export const Portfolio = () => {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }} // Las animaciones se ejecutan solo la primera vez que entran en vista
+                viewport={{ once: true }}
             >
                 <div className="slider-container portfolio-carousel">
                     <Slider {...settings}>

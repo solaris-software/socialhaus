@@ -1,6 +1,6 @@
 //Colors
 $black: #000000;
-$light-black: #383838;
+$light-black: #202020;
 $white: #ffffff;
 $grey: #B0B0B0;
 $dark-grey: #707070;
@@ -31,3 +31,8 @@ $title-font-style: "Anton", sans-serif;
 $fuzzy-font-style: "Fuzzy Bubbles", sans-serif;
 
 $top-bar-height: 72.5px;
+
+//Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1200px;
