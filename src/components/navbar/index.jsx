@@ -65,7 +65,9 @@ export const Navbar = () => {
                         <a key={index} href={item.link}>{item.name}</a>
                     ))}
                 </div>
-                <button className={styles.button}>{navbarButton}</button>
+                <a href="#contact">
+                    <button className={styles.button}>{navbarButton}</button>
+                </a>
             </div>
         </div>
     )
