@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const Contact = () => {
     return (
-        <div className={styles.container}>
+        <div id={'contact'} className={styles.container}>
             <div className={styles.contentContainer}>
                 <div className={styles.titleContainer}>
                     <Title title="CONTACT US" variant="dark"/>

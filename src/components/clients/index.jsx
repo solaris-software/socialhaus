@@ -43,7 +43,7 @@ export const Clients = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <div id={'customers'} className={styles.container}>
             <div className={styles.titleContainer}>
                 <div className={styles.titleColumn}>
                     <h5>What people say</h5>

@@ -14,7 +14,7 @@ const posts = [
 export const Team = () => {
 
     return (
-        <div className={styles.container}>
+        <div id={'team'} className={styles.container}>
             <div className={styles.postContainer}>
                 {posts.map((post, index) => (
                     <div

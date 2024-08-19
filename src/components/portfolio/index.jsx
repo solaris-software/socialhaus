@@ -46,7 +46,7 @@ export const Portfolio = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <div id={'portfolio'} className={styles.container}>
             <div className={styles.titleContainer}>
                 <Title title="PORTFOLIO" variant="light" />
             </div>

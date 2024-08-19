@@ -53,7 +53,7 @@ const cardVariants = {
 
 export function Features() {
     return (
-        <div className={styles.container}>
+        <div id={'services'} className={styles.container}>
             <div className={styles.titleContainer}>
                 <Title title="WHAT WE DO" variant="dark" />
             </div>
