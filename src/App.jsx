@@ -7,7 +7,6 @@ import {Portfolio} from "./components/portfolio/index.jsx";
 import {Clients} from "./components/clients/index.jsx";
 import {Footer} from "./components/footer/index.jsx";
 import {Contact} from "./components/contact/index.jsx";
-import {Team} from "./components/team/index.jsx";
 import {Choose} from "./components/choose/index.jsx";
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
       <Features />
       <Portfolio />
       <Clients />
-        <Choose/>
+      <Choose/>
       <Contact/>
       <Footer />
     </div>

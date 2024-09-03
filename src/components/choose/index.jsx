@@ -28,23 +28,25 @@ export const Choose = () => {
             <div className={styles.titleContainer}>
                 <Title title="WHY CHOOSE US" variant="light"/>
             </div>
-            <div className={styles.leftContainer}>
-
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{once: true}}
-                    variants={paragraphContainerVariants}
-                >
-                    <motion.p variants={paragraphVariants}>{aboutContent1}</motion.p>
-                    <motion.p variants={paragraphVariants}>{aboutContent2}</motion.p>
-                    <motion.p variants={paragraphVariants}>{aboutContent3}</motion.p>
-                    <motion.p variants={paragraphVariants}>{aboutContent4}</motion.p>
-                    <motion.p variants={paragraphVariants}>{aboutContent5}</motion.p>
-
-                </motion.div>
+            <div className={styles.content}>
+                <div className={styles.leftContainer}>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{once: true}}
+                        variants={paragraphContainerVariants}
+                    >
+                        <motion.p variants={paragraphVariants}>{aboutContent1}</motion.p>
+                        <motion.p variants={paragraphVariants}>{aboutContent2}</motion.p>
+                        <motion.p variants={paragraphVariants}>{aboutContent3}</motion.p>
+                        <motion.p variants={paragraphVariants}>{aboutContent4}</motion.p>
+                        <motion.p variants={paragraphVariants}>{aboutContent5}</motion.p>
+                    </motion.div>
+                </div>
+                <div className={styles.rightContainer}>
+                    <img src={team} alt={'team'} />
                 </div>
             </div>
-            )
-
-            }
+            </div>
+    )
+}

@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import textBg from "../../assets/hero-text-bg.png";
 import { Typewriter } from "../common/typewriter/index.jsx";
 import { motion } from "framer-motion";
+import pencil from "./pencil.svg"
 
 const heroTitle = "Social";
 const heroSubtitle = "HAUS";
@@ -60,6 +61,7 @@ export const Hero = () => {
                 <h4>
                     {heroFooter} <span>{highlight}</span>
                 </h4>
+                <img src={pencil} alt="Pencil" />
             </motion.div>
         </motion.div>
     );

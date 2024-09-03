@@ -113,13 +113,26 @@
     rotate: -2deg;
     font-weight: 500;
     color: $light-black;
-
+    h4 {
+        font-family: "Schoolbell", cursive;
+    }
     span {
         padding: $small $medium;
         border-radius: 64px;
-        border: 2px solid $light-black;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: none;
+        position: relative;
+        margin-left: 32px;
     }
+
+    img {
+        position: absolute;
+        top: 30%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        pointer-events: none;
+    }
+
 
     @media (max-width: $breakpoint-mobile) {
         display: none;
