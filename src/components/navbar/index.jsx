@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import {useState} from "react";
+import {motion} from "framer-motion";
 
 const navbarItems = [
     {
@@ -24,7 +25,8 @@ const navbarItems = [
     }
 ];
 
-const navbarTitle = "Socialhaus.";
+const navbarTitle = "SOCIAL ";
+const navbarTitle2 = "HAUS";
 const navbarButton = "CONTACT US    ";
 
 const navIcon = (
@@ -52,7 +54,15 @@ export const Navbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.logo}>
-                <span>{navbarTitle}</span>
+                <h1 className={styles.title}>
+                    {navbarTitle}
+                    <motion.span className={styles.dot}>
+                          .
+                    </motion.span>
+                </h1>
+                <div className={styles.subtitle}>
+                    <h3>{navbarTitle2}</h3>
+                </div>
             </div>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 <span className={menuOpen ? styles.open : ""}>
@@ -60,7 +70,7 @@ export const Navbar = () => {
                 </span>
             </div>
             <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
-                <div className={styles.sections}>
+            <div className={styles.sections}>
                     {navbarItems.map((item, index) => (
                         <a key={index} href={item.link}>{item.name}</a>
                     ))}

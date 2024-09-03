@@ -48,7 +48,7 @@
     font-size: 296px;
     font-weight: 700;
     font-family: $title-font-style;
-    color: $grey;
+    color: $light-black;
     line-height: 1;
     margin: 0;
 
@@ -73,7 +73,7 @@
     width: 100%;
     h3 {
         font-size: 80px;
-        color: $grey;
+        color: $light-black;
         line-height: 1;
         font-weight: 600;
         width: auto;
@@ -95,7 +95,7 @@
 }
 
 .heroText {
-    color: $light-black;
+    color: $grey;
     font-size: 54px;
     font-weight: 600;
     margin-bottom: 64px;
@@ -106,7 +106,7 @@
 
 .footer {
     font-size: 30px;
-    font-family: $fuzzy-font-style;
+    font-family: $footer-font-style;
     position: absolute;
     bottom: 64px;
     left: 464px;
