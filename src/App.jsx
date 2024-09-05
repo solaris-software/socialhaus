@@ -8,6 +8,7 @@ import {Clients} from "./components/clients/index.jsx";
 import {Footer} from "./components/footer/index.jsx";
 import {Contact} from "./components/contact/index.jsx";
 import {Choose} from "./components/choose/index.jsx";
+import {WordMoving} from "./components/common/word-moving/index.jsx";
 
 function App() {
 

@@ -3,6 +3,7 @@ import textBg from "../../assets/hero-text-bg.png";
 import { Typewriter } from "../common/typewriter/index.jsx";
 import { motion } from "framer-motion";
 import pencil from "./pencil.svg"
+import {WordMoving} from "../common/word-moving/index.jsx";
 
 const heroTitle = "Social";
 const heroSubtitle = "HAUS";
@@ -38,7 +39,7 @@ export const Hero = () => {
             animate="visible"
         >
             <motion.div className={styles.imgContainer} variants={itemVariants}>
-                <img src={textBg} alt="Hero" />
+                <WordMoving words="creatividad / innovacion / social media / estrategia digital" numberOfWords={32}/>
             </motion.div>
             <motion.div className={styles.contentContainer} variants={itemVariants}>
                 <h1 className={styles.title}>

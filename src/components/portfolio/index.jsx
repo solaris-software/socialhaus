@@ -8,6 +8,7 @@ import { ProjectCard } from "../common/projectCard/index.jsx";
 import { NextArrow, PrevArrow } from "../common/arrows/index.jsx";
 import dummyImage from "/src/assets/dummy-image.jpg";
 import { motion } from "framer-motion";
+import {WordMoving} from "../common/word-moving/index.jsx";
 
 export const Portfolio = () => {
 
@@ -47,6 +48,9 @@ export const Portfolio = () => {
 
     return (
         <div id={'portfolio'} className={styles.container}>
+            <div className={styles.wordMovingBackground}>
+                <WordMoving words="creatividad / innovacion / social media / estrategia digital" numberOfWords={32}/>
+            </div>
             <div className={styles.titleContainer}>
                 <Title title="PORTFOLIO" variant="light" />
             </div>
