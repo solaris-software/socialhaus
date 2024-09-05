@@ -11,6 +11,8 @@ const heroDescription = "Somos una agencia creativa y dinámica, basada en Bueno
 const heroFooter = "CONVIRTIENDO IDEAS CREATIVAS EN ";
 const highlight = "IMPACTO SOCIAL";
 
+const words = "creatividad / innovacion / social media / estrategia digital";
+
 const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -39,7 +41,9 @@ export const Hero = () => {
             animate="visible"
         >
             <motion.div className={styles.imgContainer} variants={itemVariants}>
-                <WordMoving words="creatividad / innovacion / social media / estrategia digital" numberOfWords={32}/>
+                <WordMoving
+                    words={words}
+                    numberOfWords={32}/>
             </motion.div>
             <motion.div className={styles.contentContainer} variants={itemVariants}>
                 <h1 className={styles.title}>

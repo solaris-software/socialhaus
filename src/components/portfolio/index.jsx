@@ -10,6 +10,8 @@ import dummyImage from "/src/assets/dummy-image.jpg";
 import { motion } from "framer-motion";
 import {WordMoving} from "../common/word-moving/index.jsx";
 
+const words = "creatividad / innovacion / social media / estrategia digital";
+
 export const Portfolio = () => {
 
     const settings = {
@@ -49,7 +51,10 @@ export const Portfolio = () => {
     return (
         <div id={'portfolio'} className={styles.container}>
             <div className={styles.wordMovingBackground}>
-                <WordMoving words="creatividad / innovacion / social media / estrategia digital" numberOfWords={32}/>
+                <WordMoving
+                    words={words}
+                    numberOfWords={64}
+                />
             </div>
             <div className={styles.titleContainer}>
                 <Title title="PORTFOLIO" variant="light" />

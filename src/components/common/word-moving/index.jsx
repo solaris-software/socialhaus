@@ -3,23 +3,29 @@ import "./styles.css";
 
 
 export const WordMoving = ({ words , numberOfWords}) => {
-    const paragraphs = Array(numberOfWords).fill(words); // Array de 12 elementos iguales
-
+    const paragraphs = Array(numberOfWords).fill(words);
+    const duration = numberOfWords > 32 ? 180 : 60;
     return (
         <div className="word-moving-container">
             {paragraphs.map((word, index) => (
                 <motion.div
                     key={index}
                     className="word-moving"
-                    animate={index % 2 === 0 ? { x: ["100%", "-100%"] } : { x: ["-100%", "100%"] }}
+                    animate={{ x: ["-1000%", "100%"] }}
                     transition={{
                         repeat: Infinity,
-                        duration: Math.random() * 5 + 5,
+                        duration: Math.random() * 40 + duration,
                         ease: "linear",
-                        delay: Math.random() * 2, // Desfase aleatorio entre 0 y 2 segundos
+                        delay: Math.random() * index * 0.2,
                     }}
                 >
-                    <p>{word}</p>
+                    <p className={`${numberOfWords > 32 && 'portfolio'}`}>
+                        {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word}
+                        {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word}
+                        {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word}
+                        {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word}
+                        {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word} {word}
+                    </p>
                 </motion.div>
             ))}
         </div>
