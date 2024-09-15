@@ -13,7 +13,7 @@ const paragraphContainerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.5
+            staggerChildren: 1
         }
     }
 };
@@ -43,9 +43,7 @@ export const Choose = () => {
                         <motion.p variants={paragraphVariants}>{aboutContent5}</motion.p>
                     </motion.div>
                 </div>
-                <div className={styles.rightContainer}>
-                    <img src={team} alt={'team'} />
-                </div>
+
             </div>
             </div>
     )
