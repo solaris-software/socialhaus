@@ -5,10 +5,9 @@ import styles from './styles.module.scss';
 import Slider from "react-slick";
 import { Title } from "../common/title/index.jsx";
 import { ProjectCard } from "../common/projectCard/index.jsx";
-import { NextArrow, PrevArrow } from "../common/arrows/index.jsx";
 import dummyImage from "/src/assets/dummy-image.jpg";
 import { motion } from "framer-motion";
-import {WordMoving} from "../common/word-moving/index.jsx";
+import { WordMoving } from "../common/word-moving/index.jsx";
 
 const words = "creatividad / innovacion / social media / estrategia digital";
 
@@ -20,9 +19,10 @@ export const Portfolio = () => {
         infinite: true,
         slidesToShow: 3,
         speed: 500,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        pauseOnHover: false,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768,
