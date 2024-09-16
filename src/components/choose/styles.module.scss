@@ -41,7 +41,7 @@
       p {
         font-size: 22px;
         color: $white;
-        font-family: "Poppins", sans-serif;
+        font-family: $fuzzy-font-style;
       }
     }
     @media (max-width: $breakpoint-mobile) {
@@ -49,6 +49,7 @@
       div {
         p {
           font-size: $body-medium;
+          font-family: $fuzzy-font-style;
         }
       }
     }

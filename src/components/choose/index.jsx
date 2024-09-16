@@ -42,7 +42,7 @@ export const Choose = () => {
                             <motion.p
                                 key={index}
                                 className="word-moving"
-                                custom={index} // Pasar el índice como prop personalizada
+                                custom={index}
                                 variants={movingVariants}
                                 animate="animate"
                             >
