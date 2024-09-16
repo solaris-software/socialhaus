@@ -15,9 +15,6 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.socialColumn}>
-                <p className={styles.socialText}>SOCIAL HAUS</p>
-            </div>
         </div>
     )
 }
