@@ -4,6 +4,7 @@ import { Typewriter } from "../common/typewriter/index.jsx";
 import { motion } from "framer-motion";
 import pencil from "./pencil.svg"
 import {WordMoving} from "../common/word-moving/index.jsx";
+import {useEffect, useState} from "react";
 
 const heroTitle = "Social";
 const heroSubtitle = "HAUS";
@@ -33,6 +34,15 @@ const typewriterVariants = {
 };
 
 export const Hero = () => {
+    const [showDescription, setShowDescription] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowDescription(true);
+        }, 2000);
+    }, []);
+
+
     return (
         <motion.div
             className={styles.container}
@@ -45,20 +55,22 @@ export const Hero = () => {
                     words={words}
                     numberOfWords={32}/>
             </motion.div>
-            <motion.div className={styles.contentContainer} variants={itemVariants}>
-                <h1 className={styles.title}>
-                    {heroTitle}
-                    <motion.span className={styles.dot}>
-                        .
-                    </motion.span>
-                </h1>
-                <div className={styles.subtitle}>
-                    <h3>{heroSubtitle}</h3>
-                </div>
-            </motion.div>
-            <motion.div className={styles.description} variants={typewriterVariants}>
-                <Typewriter text={heroDescription} className={styles.heroText} />
-            </motion.div>
+            {!showDescription &&
+                <motion.div className={styles.contentContainer} variants={itemVariants}>
+                    <h1 className={styles.title}>
+                        {heroTitle}
+                        <motion.span className={styles.dot}>
+                            .
+                        </motion.span>
+                    </h1>
+                    <div className={styles.subtitle}>
+                        <h3>{heroSubtitle}</h3>
+                    </div>
+                </motion.div>
+            }
+            {showDescription && <motion.div className={styles.description} variants={typewriterVariants}>
+                <Typewriter text={heroDescription} className={styles.heroText}/>
+            </motion.div>}
             <motion.div
                 className={styles.footer}
                 variants={itemVariants}
