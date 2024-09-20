@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import { Title } from "../common/title/index.jsx";
 import { motion } from "framer-motion";
-import team from "/public/assets/team-illustration.svg";
+import team from "/src/assets/team-illustration.svg";
 
 const aboutContent1 = "Somos creadoras de estrategias que resuenan con tu marca. Nos movemos en la \nintersección de la creatividad y lo social.";
 const aboutContent2 = "El verdadero poder reside en comprender el comportamiento humano. Saber cómo las \npersonas se conectan, se comunican y toman decisiones en un entorno social.";

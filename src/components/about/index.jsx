@@ -2,8 +2,8 @@ import styles from "./styles.module.scss";
 import { Title } from "../common/title/index.jsx";
 import { useState } from "react";
 import Collapse from "../common/collapsible/index.jsx";
-import Plus from "/public/assets/plus.svg";
-import Minus from "/public/assets/minus.svg";
+import Plus from "/src/assets/plus.svg";
+import Minus from "/src/assets/minus.svg";
 import { motion } from "framer-motion";
 
 const aboutContent1 = "Somos SOCIAL HAUS, una agencia dedicada a ayudarte a alcanzar los objetivos de tu marca mediante estrategias de marketing enfocadas en redes sociales.";

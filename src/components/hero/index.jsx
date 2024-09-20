@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import textBg from "../../../public/assets/hero-text-bg.png";
+import textBg from "../../assets/hero-text-bg.png";
 import { Typewriter } from "../common/typewriter/index.jsx";
 import { motion } from "framer-motion";
 import pencil from "./pencil.svg"

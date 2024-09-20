@@ -7,10 +7,10 @@ import { Title } from "../common/title/index.jsx";
 import { ProjectCard } from "../common/projectCard/index.jsx";
 import { motion } from "framer-motion";
 import { WordMoving } from "../common/word-moving/index.jsx";
-import hustlers from "/public/assets/hustlers.jpg";
-import gemma from "/public/assets/gemma.jpg";
-import afrika from "/public/assets/afrika.jpg";
-import groove from "/public/assets/groove.jpg";
+import hustlers from "/src/assets/hustlers.jpg";
+import gemma from "/src/assets/gemma.jpg";
+import afrika from "/src/assets/afrika.jpg";
+import groove from "/src/assets/groove.jpg";
 
 const words = "creatividad / innovacion / social media / estrategia digital";
 

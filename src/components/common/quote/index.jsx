@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import quoteSvg from "../../../../public/assets/quote.svg";
+import quoteSvg from "../../../assets/quote.svg";
 
 export const Quote = ({quote, author}) => {
     return (
