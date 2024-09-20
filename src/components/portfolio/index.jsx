@@ -5,9 +5,12 @@ import styles from './styles.module.scss';
 import Slider from "react-slick";
 import { Title } from "../common/title/index.jsx";
 import { ProjectCard } from "../common/projectCard/index.jsx";
-import dummyImage from "/src/assets/dummy-image.jpg";
 import { motion } from "framer-motion";
 import { WordMoving } from "../common/word-moving/index.jsx";
+import hustlers from "/src/assets/hustlers.jpg";
+import gemma from "/src/assets/gemma.jpg";
+import afrika from "/src/assets/afrika.jpg";
+import groove from "/src/assets/groove.jpg";
 
 const words = "creatividad / innovacion / social media / estrategia digital";
 
@@ -48,6 +51,13 @@ export const Portfolio = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
     };
 
+    const projects = [
+        { image: hustlers, title: "Hustlers" },
+        { image: gemma, title: "New Gemma" },
+        { image: afrika, title: "Afrika" },
+        { image: groove, title: "Groove" }
+    ];
+
     return (
         <div id={'portfolio'} className={styles.container}>
             <div className={styles.wordMovingBackground}>
@@ -68,16 +78,15 @@ export const Portfolio = () => {
             >
                 <div className="slider-container portfolio-carousel">
                     <Slider {...settings}>
-                        {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => {
+                        {projects.map((project, index) => {
                             return (
                                 <motion.div
                                     key={index}
                                     variants={cardVariants}
                                 >
                                     <ProjectCard
-                                        image={dummyImage}
-                                        title="Project Title"
-                                        description="Project Description"
+                                        image={project.image}
+                                        title={project.title}
                                     />
                                 </motion.div>
                             );
