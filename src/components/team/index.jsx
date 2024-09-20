@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
-import {Title} from "../common/title/index.jsx";
-import team from "../../assets/team.png"
+import team from "/public/assets/team.png"
 
 const posts = [
     "SOCIAL MEDIA",

@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
-import email from "../../assets/mail.svg";
-import phone from "../../assets/phone.svg"
+import email from "/public/assets/mail.svg";
+import phone from "/public/assets/phone.svg"
 
 export const Footer = () => {
     return (
